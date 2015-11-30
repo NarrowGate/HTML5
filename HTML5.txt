@@ -1,0 +1,114 @@
+Support:
+w3.org/TR/html5-diff
+dev.w3.org/html5/spec/spec.html
+dev.w3.org/html5/markup
+dev.w3.org/html5//spec-author-view/Overview.html
+whatwg.org
+whatwg.org/specs/web-apps/current-work/complete
+dev.w3.org/html5/spec-author-view/
+
+
+James
+GitHub for Web Designers
+
+
+No need '/' for self closing tags
+
+Header element should not contain other header elements.
+
+
+Nav element - used for major navigation or major navigation withing the current page
+Nav elements can contain other elements like p, heading
+
+Section element is not a generic element. Use div for that purpose. section element should be used only if the content would be listed explicitly in the documents outline
+
+article element
+syndicate, publish
+
+aside element
+
+footer element
+footer element represents a footer for its nearest ancestor sectioning content or sectioning root element.
+Not necessary that thery are to be used at the end of a section
+
+
+Content Models in HTML5
+7 types of content
+Metadata content
+base, command, link, meta, noscript, script, style, title
+
+Flow content
+a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, h1 - h6, header hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, map, mark, hath, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, stron, style, sub, sup, svg, table, textarea, time, u, ul, var, video, wbr, text. 
+sectioning content
+defines the scope
+article, aside, nav, section
+
+heading content
+h1 - h6, hgroup
+phrasing content
+kind of inline element
+a, abbr, area, audio, b, bdi, bdo, br, button, canvas, cite, code, command, datalist,del, dfn, em, embed, i, iframe, img, input, ins, kdb, keygen, label, map, mark, math, meter, noscript, object, output, progress, q, ruby, s, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, u, var, video, wbr, text
+embedded content 
+(external resources)
+audio, canvas, embed, iframe, img, math, object, svg, video
+
+interactive content
+a, audio, button, details, embed, iframe, img(if the usemap attribute is present), input(if type not hidden), keygen, label, menu( if type attribute is in the toolbar state), object, select, textarea, video
+
+
+OUTLINE ALOGRITHM
+w3.org/TR/html5/sections.html#outlines
+
+tool
+gsnedders.html5.org/outliner
+
+HEADINGS
+hgroup
+groups related headings
+
+Section and heading content is used to define the outline
+Body is established as the outline root
+Items are added to the outline as sectioning content is found
+Initial heading content is used to name sections
+Sectioning content contained within sections is nested in the outline
+
+
+RULES TO SELECT ELEMENTS
+
+Should the element start a new section?
+If answer is no then ask Is it introductory content? If yes, use HEADER. If no, ask does the content contain info about the author, related links, or legal info? If yes use FOOTER, If no ask if the content being grouped simply for stylistic reasons, or to extend its meaning further through an ID or Class attribute? If yes, use DIV, If no then this not sectioning content, find the appropriate grouping content element.
+
+Should the element start a new section?
+If Yes, is it a section of major navigation? if yes, use NAV. If no, is the content self-contained and could it survive independently of the document? If yes, use ARTICLE. If no, is the content only tangentially related to the content around it? If yes, ASIDE, if no ask Is the content a thematic grouping, possibly containing content that could be arranged in a header or footer? if yes, SECTION. If no, Use a heading to create an implicit section
+
+FIGURE ELEMENT
+figcaption (optional)
+
+Rel attribute
+
+
+wiki.whatwg.org/wiki/Implementations_in_Web_browsers
+en.wikipedia.org/wiki/Comparison_of_layout_engines_(HTML5)
+findmebyip.com/litmus
+samples.msdn.microsoft.com/ietestcenter/#html5Semantic
+caniuse.com
+html5test.com
+html5accessibility.com
+remysharp.com/2009/01/07/html5-enabling-script
+code.google.com/p/html5shim/
+developer.mozilla.org/en/HTML/html5
+webkit.org
+dev.opera.com/articles/tags/open web
+blog.whatwg.org
+html5doctor.com
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+	<meta charset="utf-8">
+	<title>Welcome</title>
+	</head>
+
+	<body></body>
+</html>
